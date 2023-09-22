@@ -4,7 +4,7 @@
 			<div class="herocontent">
 			<div class="ticker-wrap">
 				<div class="ticker">
-					<div class="ticker_item"><h3><span>bb</span>outique</h3></div>
+					<div class="ticker_item"><h3 class="ticker_title"><span>bb</span>outique </h3></div>
 				</div>
 			</div>
 				<a class="button">GO</a>
@@ -12,7 +12,7 @@
 			<div class="herocontent">
 				<div class="ticker-wrap">
 					<div class="ticker">
-						<div class="ticker_item"><h3>visions & valeurs</h3></div>
+						<div class="ticker_item"><h3 class="ticker_title">visions & valeurs </h3></div>
 					</div>
 				</div>
 				<a class="button">GO</a>
