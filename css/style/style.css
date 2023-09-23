@@ -1,7 +1,209 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
+@font-face {
+	font-family: "Lora";
+	src: url("../assets/fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+@font-face {
+	font-family: "DMserifdisplay";
+	src: url("../assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+	font-weight: bold;
+}
+
+
+body, htlml
+{
+	margin: 0;
+	padding: 0;
+}
+.headeraccueil
+{
+	position: fixed;
+	width: 100%;
+	height:12vh;
+	display: flex;
+	font-family: DMserifdisplay;
+	font-variant: small-caps;
+	font-size: xx-large;
+	color: white;
+}
+.headeraccueil span
+{
+	color: #e56399
+}
+.headeraccueil h2
+{
+	margin:0;
+}
+.imgheader
+{
+	width: 10vw;
+	height: 12vh;
+	color: white; ;
+}
+.titlecontainer
+{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.mainaccueil
+{
+	height: 88vh;
+	padding-top: 12vh;
+	background-image: url("../assets/images/bbaccueil.png");
+	background-size: cover;
+}
+.herocontainer
+{
+	height:66vh;
+	width: 100%;
+}
+.herocontentcontainer
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+.herocontent
+{
+	display: flex;
+	justify-content: space-around;
+	width:80%;
+	font-family: DMserifdisplay;
+	font-variant: small-caps;
+	font-size: x-large;
+	color: white;
+}
+.herocontent h3
+{
+	margin:0;
+	font-family: DMserifdisplay;
+	font-variant: small-caps;
+
+}
+.herocontent span
+{
+	color: #e56399;
+}
+/* HEADER */
+@-webkit-keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+@keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+.ticker-wrap {
+	overflow: hidden;
+	height: 5rem;
+	padding-left: 100%;
+	margin-left:6%;
+}
+
+.ticker {
+	display: inline-block;
+	height: 4rem;
+	line-height: 5rem;
+	white-space: nowrap;
+	padding-right: 100%;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: ticker;
+	animation-name: ticker;
+	-webkit-animation-duration: 30s;
+	animation-duration: 30s;
+
+}
+.ticker_item {
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 6rem;
+	font-family: DMserifdisplay;
+	font-variant: small-caps;
+}
+/* FIN HEADER */
+/* Button */
+.button{
+	position: relative;
+	background-color: #3423A6;
+	border-radius: 4em;
+	font-size: 22px;
+	color: #7B7554;
+	padding: 0.8em 1.8em;
+	cursor:pointer;
+	user-select:none;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	margin-top: 2%;
+}
+
+.button:hover {
+	transition-duration: 0.1s;
+	background-color: #e56399;
+}
+
+.button:after {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 4em;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+	box-shadow: 0 0 10px 40px white;
+}
+
+.button:active:after {
+	box-shadow: 0 0 0 0 white;
+	position: absolute;
+	border-radius: 4em;
+	left: 0;
+	top:0;
+	opacity: 1;
+	transition: 0s;
+}
+
+.button:active {
+	top: 1px;
+}
+/* FIN BUTTON */
+.paragraphaccueil
+{
+	color: white;
+	font-family: Lora;
+	width:50%;
+	text-align: justify;
+	font-size: large;
+}
+/* CSS NILS*/
 :root{
 	--main--font--family: 'DM Serif Display', serif;
 	--second--font--family: 'lora, serif';
@@ -228,5 +430,6 @@ header {
 	color: black;
 	text-decoration: none;
 }
+
 
 
