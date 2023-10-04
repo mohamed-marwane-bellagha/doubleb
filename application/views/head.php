@@ -6,6 +6,8 @@
 	<script src="<?=base_url()?>js/script.js"></script>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>css/style/style.css">
     <title>Double b - <?=$title?></title>
+<script defer src="./js/changeTextTopic.js"></script>
+
 </head>
 <body>
 

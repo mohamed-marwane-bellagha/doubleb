@@ -25,5 +25,9 @@
 		</p>
 	</div>
 </main>
+<?php
+	require_once "main.html";
+	echo __DIR__;
+?>
 </body>
 </html>
