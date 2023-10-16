@@ -12,7 +12,7 @@
 			<div class="herocontent">
 				<div class="ticker-wrap">
 					<div class="ticker">
-						<div class="ticker_item"><h3 class="ticker_title">visions & valeurs </h3></div>
+						<div class="ticker_item"><a href="<?=base_url()?>vision" class="ticker_title"><h3 >visions <span>&</span> valeurs </h3></a></div>
 					</div>
 				</div>
 				<a class="button">GO</a>
