@@ -26,4 +26,24 @@ class Welcome extends CI_Controller {
 		$this->load->view('header', $data);
 		$this->load->view('visions');
 	}
+	public function email()
+	{
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+		if ($this->form_validation->run() == FALSE)
+		{
+			$data['title']='Accueil';
+			$this->load->view('head', $data);
+			$this->load->view('header', $data);
+			$this->load->view('welcome_message');
+		}
+		else
+		{
+			$this->load->model('email_model');
+			$this->email_model->add_email();
+			$data['title']='Accueil';
+			$this->load->view('head', $data);
+			$this->load->view('header', $data);
+			$this->load->view('welcome_message');
+		}
+	}
 }

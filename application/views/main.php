@@ -51,10 +51,10 @@
         <p class="mr-5 ml-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. In unde incidunt praesentium earum. Nam, aut perspiciatis? Est quos deleniti rerum sapiente impedit. Obcaecati, cum fugiat? Architecto natus ipsa libero tenetur!</p>
         <div class="ml-5 mr-5">
             <div class="flex  align-center">
-                <form method="POST" id="emailForm" class="w-600px flex flex-row justify-between align-center">
+				<?php echo form_open("welcome/email", ['class'=> "w-600px flex flex-row justify-between align-center" ]) ?>
                     <input type="email" placeholder="my-email@any.fr" class="long-input" name="email">
                     <button class="bg-fuschia-hover inputButton">SuBBmit</button>
-                </form>
+                <?php echo form_close() ?>
             </div>
             <div class="flex flex-col justify-center align-center">
                 <span class="w-mid text-center">CONTACT</span>

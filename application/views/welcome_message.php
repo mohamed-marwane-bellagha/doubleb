@@ -26,7 +26,7 @@
 	</div>
 </main>
 <?php
-	require_once "main.html";
+	require_once "main.php";
 ?>
 </body>
 </html>
