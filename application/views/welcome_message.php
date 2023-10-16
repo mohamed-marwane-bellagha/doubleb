@@ -25,5 +25,8 @@
 		</p>
 	</div>
 </main>
+<?php
+	require_once "main.html";
+?>
 </body>
 </html>
